@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "timevue-rn",
+    "name": "TimeVue Mobile",
     "slug": "timevue-rn",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,16 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Used to determine users location when starting a shift, so the user won't be able to start a working shift at home",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Used to determine users location when starting a shift, so the user won't be able to start a working shift at home"
+      },
+      "bundleIdentifier": "de.itmediahof.timevue"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "de.itmediahof.timevue"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "timevue"
   }
 }
